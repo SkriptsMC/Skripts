@@ -6,9 +6,7 @@
 
 <h3 align="center">Skripts</h3>
   <p align="center">
-    <p href="https://discord.gg/6mSHC2Xd9y">Macro Utility</p>
-    ·
-    <p href="https://discord.gg/6mSHC2Xd9y">Easy to Use</p>
+    <p >Macro Utility · Easy to Use</p>
   </p>
 </div>
 
@@ -28,7 +26,3 @@ Don't forget to give the project a star! Thanks again!
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-## License
-
-Distributed under a custom license. See `LICENSE` for more information.
