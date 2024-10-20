@@ -1,0 +1,16 @@
+[
+  {
+    "modid": "skripts",
+    "name": "Skripts",
+    "description": "Eat. Sleep. Skript.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]

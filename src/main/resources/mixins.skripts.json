@@ -1,0 +1,9 @@
+{
+  "package": "dev.skripts.mixins",
+  "refmap": "mixins.skripts.refmap.json",
+  "minVersion": "0.7.11",
+  "compatibilityLevel": "JAVA_8",
+  "verbose": true,
+  "mixins": [
+  ]
+}

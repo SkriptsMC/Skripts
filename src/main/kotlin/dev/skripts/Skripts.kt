@@ -1,0 +1,26 @@
+package dev.skripts
+
+import net.minecraftforge.common.MinecraftForge
+import net.minecraftforge.fml.common.Mod
+import net.minecraftforge.fml.common.event.FMLInitializationEvent
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+import net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent
+import org.apache.logging.log4j.LogManager
+import org.apache.logging.log4j.Logger
+
+@Mod(
+    modid = "skripts",
+    name = "Skripts",
+    version = "1.0.0",
+    acceptedMinecraftVersions = "[1.8.9]",
+    modLanguageAdapter = "gg.essential.api.utils.KotlinAdapter",
+    clientSideOnly = true
+)
+object Skripts {
+
+    @Mod.EventHandler
+    fun onInit(event: FMLInitializationEvent) {
+        println("Initialization Event Triggered!")
+    }
+
+}
