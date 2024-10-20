@@ -1,2 +1,2 @@
-# Skripts
-Eat. Sleep. Macro.
+# ⚙ Skripts
+💻 Eat. Sleep. Macro.
