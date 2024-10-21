@@ -1,12 +1,10 @@
 package dev.skripts
 
+import dev.skripts.failsafe.FailsafeManager
+import net.minecraft.client.Minecraft
 import net.minecraftforge.common.MinecraftForge
 import net.minecraftforge.fml.common.Mod
 import net.minecraftforge.fml.common.event.FMLInitializationEvent
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent
-import net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent
-import org.apache.logging.log4j.LogManager
-import org.apache.logging.log4j.Logger
 
 @Mod(
     modid = "skripts",
@@ -18,9 +16,12 @@ import org.apache.logging.log4j.Logger
 )
 object Skripts {
 
+    private val mc: Minecraft = Minecraft.getMinecraft()
+
     @Mod.EventHandler
     fun onInit(event: FMLInitializationEvent) {
-        println("Initialization Event Triggered!")
+        FailsafeManager.initialize()
+        MinecraftForge.EVENT_BUS.register(this)
     }
 
 }
