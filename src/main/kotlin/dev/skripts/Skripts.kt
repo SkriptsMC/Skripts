@@ -1,5 +1,6 @@
 package dev.skripts
 
+import dev.skripts.command.SkriptsCommand
 import dev.skripts.failsafe.FailsafeManager
 import net.minecraft.client.Minecraft
 import net.minecraftforge.common.MinecraftForge
@@ -21,6 +22,7 @@ object Skripts {
     @Mod.EventHandler
     fun onInit(event: FMLInitializationEvent) {
         FailsafeManager.initialize()
+        SkriptsCommand.register()
         MinecraftForge.EVENT_BUS.register(this)
     }
 
