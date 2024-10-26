@@ -1,9 +1,9 @@
 package dev.skripts.command;
 
-import dev.skripts.gui.openGui
+import dev.skripts.gui.ConfigScreen
+import gg.essential.api.EssentialAPI
 import gg.essential.api.commands.Command
 import gg.essential.api.commands.DefaultHandler
-import gg.essential.api.commands.SubCommand
 
 object SkriptsCommand : Command("skripts") {
 
@@ -11,7 +11,7 @@ object SkriptsCommand : Command("skripts") {
 
     @DefaultHandler
     fun handle() {
-        openGui()
+        EssentialAPI.getGuiUtil().openScreen(ConfigScreen())
     }
 
 }
